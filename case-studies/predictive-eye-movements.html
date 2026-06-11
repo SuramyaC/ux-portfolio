@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predictive Eye Movements under Cognitive Load | Suramya Chandra</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/case-study.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">SC</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#methods">Methods</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <article class="case-study">
+    <div class="container">
+      <a href="../index.html#work" class="back-link">← Back to all projects</a>
+
+      <header class="case-study-header">
+        <span class="case-card-tag">Eye-Tracking · Cognitive Science</span>
+        <h1>Predictive Eye Movements under Varying Cognitive Loads</h1>
+        <p class="case-study-subtitle">Examining how cognitive load influences real-time reading behavior to inform adaptive text-based interfaces</p>
+      </header>
+
+      <div class="case-study-meta">
+        <div class="meta-item">
+          <span class="meta-label">Role</span>
+          <span class="meta-value">Researcher</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Institution</span>
+          <span class="meta-value">RPTU Kaiserslautern</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Context</span>
+          <span class="meta-value">M.Sc. Cognitive Science</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Methods</span>
+          <span class="meta-value">Eye-tracking, Linear Mixed-Effects Modeling</span>
+        </div>
+      </div>
+
+      <div class="case-study-image-placeholder">
+        <span>Project Hero Image</span>
+      </div>
+
+      <section class="case-study-section">
+        <h2>Overview</h2>
+        <p>Conducted an eye-tracking user study to examine how cognitive load influences real-time reading behavior. The goal was to understand how varying demands on working memory affect predictive eye movements, and what this means for designing text-based interfaces that adapt to the user's cognitive state.</p>
+      </section>
+
+      <section class="case-study-section">
+        <h2>The Challenge</h2>
+        <p>When users are under high cognitive load, their reading behavior changes, but how exactly? If we can identify reliable gaze-based markers of cognitive strain, we can build interfaces that respond in real time: simplifying content, adjusting pacing, or providing support at the right moment.</p>
+      </section>
+
+      <section class="case-study-section">
+        <h2>Research Approach</h2>
+        <ul>
+          <li>Designed a controlled eye-tracking study with varying levels of cognitive load</li>
+          <li>Collected gaze data (fixations, saccades, regressions) during reading tasks</li>
+          <li>Applied linear mixed-effects modeling to account for individual differences and repeated measures</li>
+          <li>Analyzed how predictive eye movements shift under different cognitive demands</li>
+        </ul>
+        <h3>Why these methods?</h3>
+        <p>Eye-tracking was the only way to capture predictive gaze behavior as it happens. Self-report can't tell you whether someone's eyes were anticipating the next word or regressing to re-read. Linear mixed-effects modeling was chosen over simpler ANOVAs because it handles the nested, repeated-measures structure of reading data without aggregating away meaningful individual differences.</p>
+      </section>
+
+      <section class="case-study-section">
+        <h2>Key Findings</h2>
+        <ul>
+          <li>Cognitive load systematically altered predictive gaze patterns during reading</li>
+          <li>Higher load conditions led to measurable changes in fixation duration and regression frequency</li>
+          <li>These gaze markers are reliable enough to serve as real-time indicators for adaptive systems</li>
+        </ul>
+      </section>
+
+      <section class="case-study-section">
+        <h2>Impact</h2>
+        <p>The findings provide a foundation for designing adaptive text-based interfaces that detect cognitive strain through gaze behavior and respond by adjusting content presentation, moving toward interfaces that work with the user's cognitive state rather than against it.</p>
+      </section>
+
+      <nav class="case-study-nav">
+        <a href="spatial-attention-vr.html" class="prev-study">← Previous: Spatial Attention in VR</a>
+        <a href="hand-movement-vwp.html" class="next-study">Next: Hand Movement in Visual World Paradigm →</a>
+      </nav>
+
+      <section class="case-study-section reflections">
+        <h2>Reflections</h2>
+        <p>This study reinforced that statistical modeling choices matter as much as study design. Mixed-effects models were the right call because they handle the repeated-measures structure without throwing away individual variability. If I ran this again, I'd add a dual-task condition to create more ecologically valid cognitive load rather than relying solely on working memory tasks.</p>
+      </section>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Suramya. Built with care.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -3,38 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suramya — UX Researcher</title>
+  <title>Suramya | UX Researcher</title>
+  <meta name="description" content="Suramya Chandra is a UX researcher specializing in eye-tracking, usability testing, and VR experiments. I help you connect the dots.">
+
+  <!-- Open Graph / LinkedIn Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Suramya Chandra | UX Researcher">
+  <meta property="og:description" content="I help you connect the dots. From eye-tracking and usability testing to VR experiments, I turn behavioral data into design decisions.">
+  <meta property="og:url" content="https://suramyac.github.io/ux-portfolio/">
+  <meta property="og:image" content="https://suramyac.github.io/ux-portfolio/assets/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Suramya Chandra | UX Researcher">
+  <meta name="twitter:description" content="I help you connect the dots. From eye-tracking and usability testing to VR experiments, I turn behavioral data into design decisions.">
+  <meta name="twitter:image" content="https://suramyac.github.io/ux-portfolio/assets/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <!-- Navigation -->
   <nav class="nav" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">SC</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Portfolio</a></li>
+        <li class="nav-dropdown">
+          <a href="#methods">Skills <i class="fas fa-chevron-down nav-arrow"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#process">Process</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a href="#hero" class="nav-name">Suramya Chandra</a>
+      <div class="nav-socials">
+        <a href="#thoughts" aria-label="Substack" data-tooltip="Read my thoughts" class="nav-substack"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M2 2h20v4H2V2zm0 6h20v4H2V8zm0 6h20v10l-10-6-10 6V14z"/></svg></a>
+        <a href="mailto:suramya19@gmail.com" aria-label="Email" data-tooltip="Email me"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/suramya-chandra/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-tooltip="Check out my LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
       <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#methods">Methods</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
-    <div class="container">
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1 class="hero-name">Suramya Chandra</h1>
-      <p class="hero-title">UX Researcher</p>
-      <p class="hero-tagline">I blend cognitive science with user research to design experiences grounded in how people actually think, perceive, and interact. From eye-tracking studies and usability testing to VR experiments, I turn behavioral data into design decisions and research insights into actionable recommendations.</p>
+    <div class="container hero-centered">
+      <h1 class="hero-name">Hi, I'm Suramya Chandra</h1>
+      <p class="hero-tagline-bold">
+        <span class="connect-dots">
+          <span class="dot dot-left"></span>
+          I help you connect the dots.
+          <span class="dot dot-right"></span>
+          <span class="connect-line"></span>
+        </span>
+      </p>
+      <p class="hero-tagline">From eye-tracking studies and usability testing to VR experiments, I turn behavioral data into design decisions and research insights into actionable recommendations.</p>
       <a href="#work" class="btn btn-primary">View My Work</a>
     </div>
   </section>
@@ -45,14 +81,13 @@
       <h2 class="section-title">About Me</h2>
       <div class="about-content">
         <div class="about-image">
-          <div class="about-image-placeholder" aria-label="Profile photo placeholder">
-            <span>Your Photo</span>
-          </div>
+          <img src="assets/profile.png" alt="Suramya Chandra" class="about-photo">
         </div>
         <div class="about-text">
-          <p>I'm a UX researcher with a background in cognitive science and psychology. Currently finishing my M.Sc. in Cognitive Science at RPTU Kaiserslautern, I specialize in understanding how people process information and interact with complex systems.</p>
-          <p>My work sits at the intersection of research rigor and design impact — I use methods like eye-tracking, usability testing, and behavioral experiments to uncover insights that directly shape product decisions. I've applied this at KUKA (robotics), DFKI (AI research), and the Max Planck Institute.</p>
-          <p>I'm most energized when research reveals something unexpected — the kind of insight that reframes a problem and opens up better solutions.</p>
+          <p>I'm a UX researcher with a background in cognitive science and psychology. I'm wrapping up my M.Sc. in Cognitive Science at RPTU Kaiserslautern, where I've been studying how people process information and interact with complex systems.</p>
+          <p>My path here was intentional: I started in psychology and business to understand human behavior and decision-making, then moved into cognitive science to get closer to how people perceive, attend, and learn. That combination now shapes how I approach research: grounded in theory, focused on real behavior, and always aimed at practical design outcomes.</p>
+          <p>I use methods like eye-tracking, usability testing, and behavioral experiments to find insights that shape real product decisions. I've done this work at KUKA (robotics), DFKI (AI research), and the Max Planck Institute.</p>
+          <p>What drives me most is when research surfaces something no one expected. Those moments where a finding reframes the problem entirely and points to a better solution.</p>
         </div>
       </div>
     </div>
@@ -62,8 +97,12 @@
   <section id="work" class="work">
     <div class="container">
       <h2 class="section-title">Selected Work</h2>
-      <p class="section-subtitle">Case studies showcasing my research process and impact</p>
-      <div class="case-studies-grid">
+      <p class="section-subtitle">A look at the projects I've worked on and what I learned from them</p>
+
+      <h3 class="work-category">Industry & Applied Research</h3>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn carousel-btn-left" aria-label="Scroll left">‹</button>
+        <div class="case-studies-carousel">
 
         <article class="case-card">
           <div class="case-card-image" aria-label="Multimodal Human-Robot Interaction project">
@@ -72,8 +111,8 @@
           <div class="case-card-content">
             <span class="case-card-tag">Usability Research</span>
             <h3 class="case-card-title">Multimodal Human-Robot Interaction</h3>
-            <p class="case-card-desc">Researching how operators interact with robotic systems during commissioning at KUKA. Combining SUS, UEQ, interviews, and observations to improve setup usability.</p>
-            <a href="#" class="case-card-link">Read Case Study →</a>
+            <p class="case-card-desc">Studying how operators work with cobots during commissioning at KUKA. I combined SUS, UEQ, interviews, and observations to find usability pain points and suggest improvements.</p>
+            <a href="case-studies/human-robot-interaction.html" class="case-card-link">Read Case Study →</a>
           </div>
         </article>
 
@@ -84,8 +123,8 @@
           <div class="case-card-content">
             <span class="case-card-tag">Eye-Tracking · Master's Thesis</span>
             <h3 class="case-card-title">Gaze-Driven Adaptive Learning</h3>
-            <p class="case-card-desc">Designed and evaluated a system that adapts reading content based on real-time gaze data. Measured impact on engagement and comprehension through a controlled user study.</p>
-            <a href="#" class="case-card-link">Read Case Study →</a>
+            <p class="case-card-desc">Built and tested a system that adapts reading content in real time based on where you look. Ran a controlled study to see how it affected engagement and comprehension.</p>
+            <a href="case-studies/adaptive-learning.html" class="case-card-link">Read Case Study →</a>
           </div>
         </article>
 
@@ -96,8 +135,63 @@
           <div class="case-card-content">
             <span class="case-card-tag">VR · Behavioral Research</span>
             <h3 class="case-card-title">Spatial Attention in VR</h3>
-            <p class="case-card-desc">Led a study at Max Planck Institute combining eye- and body-tracking to explore how people allocate attention in immersive environments. Findings informed adaptive interface design.</p>
-            <a href="#" class="case-card-link">Read Case Study →</a>
+            <p class="case-card-desc">Ran a study at Max Planck combining eye-tracking and body-tracking in VR to understand how people distribute attention in 3D spaces. The results fed into adaptive interface design.</p>
+            <a href="case-studies/spatial-attention-vr.html" class="case-card-link">Read Case Study →</a>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-card-image" aria-label="Sustainability research project">
+            <span>Project Image</span>
+          </div>
+          <div class="case-card-content">
+            <span class="case-card-tag">Market Research · Social Impact</span>
+            <h3 class="case-card-title">Sustainability & User Impact Research</h3>
+            <p class="case-card-desc">Did interviews, surveys, and field visits at ALSiSAR Impact to understand how users experienced sustainability-focused fintech products and where engagement dropped off.</p>
+            <a href="case-studies/sustainability-research.html" class="case-card-link">Read Case Study →</a>
+          </div>
+        </article>
+
+        </div>
+        <button class="carousel-btn carousel-btn-right" aria-label="Scroll right">›</button>
+      </div>
+
+      <h3 class="work-category">Academic Research Projects</h3>
+      <div class="case-studies-grid">
+
+        <article class="case-card">
+          <div class="case-card-image" aria-label="Predictive Eye Movements project">
+            <span>Project Image</span>
+          </div>
+          <div class="case-card-content">
+            <span class="case-card-tag">Eye-Tracking · Cognitive Science</span>
+            <h3 class="case-card-title">Predictive Eye Movements under Cognitive Load</h3>
+            <p class="case-card-desc">Tracked eye movements while people read under different cognitive loads. Used mixed-effects modeling to figure out what gaze patterns tell us about when interfaces should adapt.</p>
+            <a href="case-studies/predictive-eye-movements.html" class="case-card-link">Read Case Study →</a>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-card-image" aria-label="Hand Movement VWP project">
+            <span>Project Image</span>
+          </div>
+          <div class="case-card-content">
+            <span class="case-card-tag">VR · Multimodal Interaction</span>
+            <h3 class="case-card-title">Predictive Language Processing via Hand Movement</h3>
+            <p class="case-card-desc">Set up a VR experiment to see how people's hands start moving before they finish hearing an instruction. Used tracking and heatmaps to explore what this means for interaction design.</p>
+            <a href="case-studies/hand-movement-vwp.html" class="case-card-link">Read Case Study →</a>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-card-image" aria-label="Bilingual Language Switching project">
+            <span>Project Image</span>
+          </div>
+          <div class="case-card-content">
+            <span class="case-card-tag">Behavioral Experiment</span>
+            <h3 class="case-card-title">Bilingual Language Switching & Emotion</h3>
+            <p class="case-card-desc">Ran a controlled experiment to see how emotional words affect reaction times when people switch languages. Handled everything from stimulus design to ANOVA analysis.</p>
+            <a href="case-studies/bilingual-language-switching.html" class="case-card-link">Read Case Study →</a>
           </div>
         </article>
 
@@ -105,42 +199,190 @@
     </div>
   </section>
 
-  <!-- Methods Section -->
+  <!-- Skills Section -->
   <section id="methods" class="methods">
     <div class="container">
-      <h2 class="section-title">Research Methods</h2>
-      <p class="section-subtitle">Tools and approaches I bring to every project</p>
+      <h2 class="section-title">Skills & Tools</h2>
+      <p class="section-subtitle">What I use day to day</p>
       <div class="methods-grid">
         <div class="method-card">
           <div class="method-icon" aria-hidden="true">👁️</div>
           <h3>Eye-Tracking</h3>
-          <p>Gaze analysis using EyeLink systems to understand attention, reading behavior, and interface interaction patterns.</p>
+          <p>I use EyeLink systems to study where people look, how they read, and what catches their attention in an interface.</p>
         </div>
         <div class="method-card">
           <div class="method-icon" aria-hidden="true">🧪</div>
           <h3>Usability Testing</h3>
-          <p>Moderated and unmoderated sessions using SUS, UEQ, and behavioral data to evaluate product experiences.</p>
+          <p>Running moderated and unmoderated sessions with SUS, UEQ, and behavioral data to see how well a product actually works for people.</p>
         </div>
         <div class="method-card">
           <div class="method-icon" aria-hidden="true">🎙️</div>
           <h3>User Interviews</h3>
-          <p>In-depth qualitative conversations to uncover motivations, mental models, and unmet needs.</p>
-        </div>
-        <div class="method-card">
-          <div class="method-icon" aria-hidden="true">🥽</div>
-          <h3>VR Research</h3>
-          <p>Designing immersive experiments in Unity to study cognition, spatial attention, and embodied interaction.</p>
+          <p>Talking to people one-on-one to understand their motivations, mental models, and the needs they can't always articulate.</p>
         </div>
         <div class="method-card">
           <div class="method-icon" aria-hidden="true">📊</div>
-          <h3>Quantitative Analysis</h3>
-          <p>Statistical modeling (ANOVA, mixed-effects) in R and SPSS to validate findings and measure impact at scale.</p>
+          <h3>Statistics & Analysis</h3>
+          <p>SPSS, R, MATLAB, Python. I run ANOVAs, mixed-effects models, and behavioral analytics to back up findings with numbers.</p>
         </div>
         <div class="method-card">
-          <div class="method-icon" aria-hidden="true">🗺️</div>
-          <h3>Mixed-Methods Synthesis</h3>
-          <p>Combining qualitative insights with quantitative evidence to build a complete picture and drive alignment.</p>
+          <div class="method-icon" aria-hidden="true">🎨</div>
+          <h3>Design & Visualization</h3>
+          <p>Figma, Miro, Unity, and MS Office for prototyping, mapping journeys, and making research findings easy to communicate.</p>
         </div>
+        <div class="method-card">
+          <div class="method-icon" aria-hidden="true">🤖</div>
+          <h3>AI-Powered Research</h3>
+          <p>Worked with AI-driven research and synthesis tools at DFKI to speed up insight generation and spot patterns faster.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Process Section -->
+  <section id="process" class="process">
+    <div class="container">
+      <h2 class="section-title">How I Work</h2>
+      <p class="section-subtitle">My research process, and where I fit in the bigger picture</p>
+
+      <!-- Product Development Cycle (Macro) -->
+      <div class="process-cycle">
+        <h3 class="process-heading">The Product Cycle</h3>
+        <p class="process-desc">I plug into the product development cycle at multiple points, making sure decisions are grounded in real user behavior throughout the process.</p>
+        <div class="cycle-visual">
+          <div class="cycle-step">
+            <div class="cycle-node">Discover</div>
+            <div class="cycle-connector"></div>
+          </div>
+          <div class="cycle-step">
+            <div class="cycle-node active">Research</div>
+            <div class="cycle-connector"></div>
+          </div>
+          <div class="cycle-step">
+            <div class="cycle-node active">Define</div>
+            <div class="cycle-connector"></div>
+          </div>
+          <div class="cycle-step">
+            <div class="cycle-node">Design</div>
+            <div class="cycle-connector"></div>
+          </div>
+          <div class="cycle-step">
+            <div class="cycle-node active">Test</div>
+            <div class="cycle-connector"></div>
+          </div>
+          <div class="cycle-step">
+            <div class="cycle-node">Build</div>
+            <div class="cycle-connector"></div>
+          </div>
+          <div class="cycle-step">
+            <div class="cycle-node active">Evaluate</div>
+          </div>
+        </div>
+        <p class="cycle-caption">Highlighted steps are where I come in. I'm involved in early discovery, defining the problem, mid-cycle testing, and post-launch evaluation.</p>
+      </div>
+
+      <!-- Zoom-in connector -->
+      <div class="zoom-connector">
+        <div class="zoom-line"></div>
+        <span class="zoom-label">Zooming into my research process</span>
+        <div class="zoom-line"></div>
+      </div>
+
+      <!-- My Research Flowchart (Micro) -->
+      <div class="flowchart">
+        <h3 class="process-heading">How I Run a Study</h3>
+        <div class="flowchart-steps">
+          <div class="flow-step">
+            <div class="flow-number">01</div>
+            <div class="flow-content">
+              <h4>Define</h4>
+              <p>Clarify the research question. What do we need to know and why does it matter for the product?</p>
+            </div>
+          </div>
+          <div class="flow-arrow" aria-hidden="true"></div>
+          <div class="flow-step">
+            <div class="flow-number">02</div>
+            <div class="flow-content">
+              <h4>Plan</h4>
+              <p>Choose the right methods, recruit participants, and design the study to get reliable answers.</p>
+            </div>
+          </div>
+          <div class="flow-arrow" aria-hidden="true"></div>
+          <div class="flow-step">
+            <div class="flow-number">03</div>
+            <div class="flow-content">
+              <h4>Conduct</h4>
+              <p>Run the research. Interviews, usability tests, eye-tracking sessions, surveys, or experiments.</p>
+            </div>
+          </div>
+          <div class="flow-arrow" aria-hidden="true"></div>
+          <div class="flow-step">
+            <div class="flow-number">04</div>
+            <div class="flow-content">
+              <h4>Analyze</h4>
+              <p>Synthesize the data. Find patterns, quantify behaviors, and pull out the insights that matter.</p>
+            </div>
+          </div>
+          <div class="flow-arrow" aria-hidden="true"></div>
+          <div class="flow-step">
+            <div class="flow-number">05</div>
+            <div class="flow-content">
+              <h4>Recommend</h4>
+              <p>Translate findings into clear, actionable recommendations the team can act on immediately.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Collaborators Say</h2>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial-card">
+          <p class="testimonial-text">"Suramya quickly became a valued team member, bringing a great mix of curiosity, reliability, and positive energy. I especially appreciated her strong quantitative skills, which she applied with great precision, particularly in our multimodal study, where her contributions had a real impact. Her work was always of high quality, thoughtful, and well-structured, and she consistently brought fresh perspectives from her university background to the team."</p>
+          <footer class="testimonial-author">
+            <strong>Nadine Reißner</strong>
+            <span>Senior UX Researcher, KUKA</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p class="testimonial-text">"Thanks to her strong background in cognitive science, she approached complex data sets with an analytical mind and delivered precise, actionable insights. Suramya is highly reliable, proactive, and collaborates seamlessly with diverse teams. She will be a tremendous asset to any research or UX team."</p>
+          <footer class="testimonial-author">
+            <strong>Jenny Huch</strong>
+            <span>Advanced UX Researcher, KUKA</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thoughts / Blog Section -->
+  <section id="thoughts" class="thoughts">
+    <div class="container">
+      <h2 class="section-title">Thoughts</h2>
+      <p class="section-subtitle">Things I've been thinking about in UX research</p>
+      <div class="thoughts-grid">
+        <article class="thought-card">
+          <span class="thought-date">2026</span>
+          <h3 class="thought-title">How I Would Improve the Multimodal Study at KUKA</h3>
+          <p class="thought-preview">Looking back at the cobot study with fresh eyes. Confidence checks, error rates, baselines, and other changes I'd make to sharpen the findings.</p>
+          <a href="thoughts/improving-multimodal-study.html" class="thought-link">Read more →</a>
+        </article>
+        <article class="thought-card">
+          <span class="thought-date">2026</span>
+          <h3 class="thought-title">Why Eye-Tracking Belongs in Every UX Toolkit</h3>
+          <p class="thought-preview">Most teams rely on what users say. But gaze data shows what they actually do. Here's why I think eye-tracking should be more accessible in product research.</p>
+          <a href="thoughts/eye-tracking-ux-toolkit.html" class="thought-link">Read more →</a>
+        </article>
+        <article class="thought-card">
+          <span class="thought-date">2025</span>
+          <h3 class="thought-title">Adaptive Interfaces: When Should Systems Intervene?</h3>
+          <p class="thought-preview">My thesis taught me that adapting content isn't just about detecting difficulty. It's about timing, subtlety, and knowing when not to interrupt.</p>
+          <a href="thoughts/adaptive-interfaces-when-to-intervene.html" class="thought-link">Read more →</a>
+        </article>
       </div>
     </div>
   </section>
@@ -149,15 +391,13 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2 class="section-title">Let's Connect</h2>
-      <p class="section-subtitle">I'm always open to discussing research opportunities and collaboration.</p>
+      <p class="section-subtitle">Thanks for stopping by. If you have feedback on this site or just want to say hi, I'd love to hear from you.</p>
       <div class="contact-links">
-        <a href="mailto:suramya19@gmail.com" class="contact-item">
-          <span class="contact-label">Email</span>
-          <span class="contact-value">suramya19@gmail.com</span>
+        <a href="mailto:suramya19@gmail.com" class="contact-icon" aria-label="Email">
+          <i class="fas fa-envelope"></i>
         </a>
-        <a href="https://www.linkedin.com/in/suramya-chandra/" class="contact-item" target="_blank" rel="noopener noreferrer">
-          <span class="contact-label">LinkedIn</span>
-          <span class="contact-value">linkedin.com/in/suramya-chandra</span>
+        <a href="https://www.linkedin.com/in/suramya-chandra/" class="contact-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
         </a>
       </div>
     </div>
@@ -169,6 +409,15 @@
       <p>&copy; 2026 Suramya. Built with care.</p>
     </div>
   </footer>
+
+  <!-- Connecting Dots Background -->
+  <canvas id="dots-canvas" aria-hidden="true"></canvas>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" aria-label="Switch to dark mode">🌙</button>
 
   <script src="js/main.js"></script>
 </body>
